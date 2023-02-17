@@ -76,6 +76,8 @@ section {
 img {
   max-width: 100px;
   height: auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 button {
