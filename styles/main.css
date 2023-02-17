@@ -12,20 +12,20 @@ h1 {
   color: #4f4f4f;
 }
 
-header {
-  background-color: #f5f5f5;
+/*header {
+  background-color: black;
   color: #333;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-}
+}*/
 
 header img {
-  width: 120px;
+  width: 100px;
   height: auto;
 }
-
+/*
 header nav ul {
   list-style: none;
   display: flex;
@@ -42,7 +42,7 @@ header nav ul li a {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 18px;
-}
+}*/
 
 main {
   display: flex;
@@ -64,7 +64,7 @@ section {
 }
 
 img {
-  max-width: 100%;
+  max-width: 100px;
   height: auto;
 }
 
