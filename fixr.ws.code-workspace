@@ -1,7 +1,15 @@
 {
-    "folders": [
-        {
-            "path": "."
-        }
-    ]
+  "folders": [
+    {
+      "name": "sandbox",
+      "path": "../sandbox"
+    },
+    {
+      "name": "fixr",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "sandbox"
+  }
 }
