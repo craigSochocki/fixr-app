@@ -21,36 +21,49 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
-    <header>
-      <nav>my nav bar</nav>
-    </header>
-    <div class="conversation-pane">
-      <aside class="convo-log">
+    <div id="page">
+      <header>
+        <h1>fixrchat</h1>
+        <nav>my nav bar</nav>
+      </header>
+
+      <section class="chatbox">
+        <article class="message fixr">
+          Hi, I'm your Fixr. How can I help you?
+        </article>
+        <article class="message user">
+          Hi Fixr, I'm the user. I need help with my project.
+        </article>
+      </section>
+      <section id="user-input">
+        <form>
+          <p>
+            <input
+              type="text"
+              name="prompt"
+              placeholder="What's on your mind?"
+              autocomplete="off"
+              required
+            />
+            <button type="submit">
+              <i id="submit-icon" class="fas fa-paper-plane"></i>
+            </button>
+          </p>
+        </form>
+      </section>
+      <br />
+      <aside class="convo-history">
         <h3>other chats</h3>
         <ul>
           <li>chat one</li>
           <li>chat two</li>
         </ul>
       </aside>
-      <h1>fixrchat</h1>
-      <h2>conversation window</h2>
-      <section class="conversation">
-        <div class="message fixr">Hi, I'm your Fixr. How can I help you?</div>
-        <div class="message user">
-          Hi Fixr, I'm the user. I need help with my project.
-        </div>
-      </section>
-      <br />
-      <form>
-        <input type="text" name="prompt" placeholder="What's on your mind?" />
-        <button type="submit"><i class="material-icons">send</i></button>
-      </form>
-      <br />
     </div>
   </body>
-  <br />
-  <hr />
+
   <footer>
     <p>&copy; fixr solutions, inc. 2023</p>
     <section class="socials">
