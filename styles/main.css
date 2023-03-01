@@ -149,6 +149,8 @@ button[type="submit"] {
   display: flex;
   flex-direction: column;
   margin: 20px;
+  max-height: 450px;
+  overflow: auto;
 }
 
 .message {
@@ -183,7 +185,9 @@ button[type="submit"] {
   max-width: 75%;
   text-align: left;
   position: relative;
-  overflow: hidden;
+  /* allow scrolling content and prevent chat box from shrinking*/
+  overflow: auto;
+  flex-shrink: 0;
 }
 
 .fixr-response:before {
@@ -208,7 +212,9 @@ button[type="submit"] {
   max-width: 75%;
   text-align: left;
   position: relative;
-  overflow: hidden;
+  /* allow scrolling content and prevent chat box from shrinking*/
+  overflow: auto;
+  flex-shrink: 0;
 }
 
 .user-response:before {
