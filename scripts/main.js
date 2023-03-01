@@ -1,5 +1,10 @@
+// store elements in variables
+const conversation = document.getElementById("conversation");
+const form = document.getElementById("chat-form");
+const input = document.getElementById("chat-input");
+
+// adds message to conversation box
 function appendMessage(sender, message) {
-  const conversation = document.getElementById("conversation");
   const messageElem = document.createElement("div");
   messageElem.innerHTML = message;
 
@@ -10,17 +15,23 @@ function appendMessage(sender, message) {
   }
 
   conversation.appendChild(messageElem);
-}
 
-const form = document.getElementById("chat-form");
-const input = document.getElementById("chat-input");
+  // scrollTop value is a measurment of the distance from top of element to top of visible element
+  // set that equal to the scroll height so its always matched
+  // scroll every time element is added
+  conversation.scrollTop = conversation.scrollHeight;
+}
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
+  // users message = input.value
   const message = input.value;
+
+  // set the input field back to empty
   input.value = "";
 
+  // call above function with "user as the"
   appendMessage("user", message);
 
   setTimeout(() => {
