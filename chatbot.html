@@ -7,14 +7,14 @@
     <title>fixr - chatbot</title>
 
     <!-- Main css  -->
-    <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" type="text/css" href="styles/main.css" />
 
     <!--Jquery file for navbar-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
-  <div id="nav-placeholder"></div>
-    
+  <body>
+    <div id="nav-placeholder"></div>
+
     <div id="conversation">
       <div class="fixr-response">Hi, I'm fixr. How can I help you?</div>
     </div>
@@ -30,9 +30,9 @@
 
     <!--JQuery for Navbar-->
     <script>
-        $.get("navbar.html", function(data){
-            $("#nav-placeholder").replaceWith(data);
-        });
-    </script> 
+      $.get("navbar.html", function (data) {
+        $("#nav-placeholder").replaceWith(data);
+      });
+    </script>
   </body>
 </html>
