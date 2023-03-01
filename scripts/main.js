@@ -19,7 +19,9 @@ function appendMessage(sender, message) {
   // scrollTop value is a measurment of the distance from top of element to top of visible element
   // set that equal to the scroll height so its always matched
   // scroll every time element is added
-  conversation.scrollTop = conversation.scrollHeight;
+  setTimeout(() => {
+    conversation.scrollTop = conversation.scrollHeight;
+  }, 50);
 }
 
 form.addEventListener("submit", (event) => {
