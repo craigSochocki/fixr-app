@@ -1,44 +1,12 @@
+/*Responsive web design*/
+
 @media only screen and (max-width: 991px) {
   .section-bg {
     background-color: #f6f6f6;
   }
 
-  .plan-tables-5 .detail-block {
-    display: none;
-  }
-
-  .plan-style-5 {
-    border: 1px solid #eee;
-  }
-  .plan-style-5 .plan-list li p {
-    display: block;
-  }
-  .plan-style-5 .tooltip-info .tooltiptext {
-    bottom: 95%;
-  }
-
   .plan-tables-1 > div:nth-last-child(-n + 1) {
     margin: 30px auto auto auto;
-  }
-
-  .plan-tables-2 > div:nth-last-child(-n + 1) {
-    margin: 30px auto auto auto;
-  }
-
-  .plan-tables-4 > div:nth-last-child(-n + 1) {
-    margin: 30px auto auto auto;
-  }
-
-  .plan-tables-3 > div:nth-last-child(-n + 1) {
-    margin: 48px auto auto auto;
-  }
-
-  .plan-style-3.blue-shadow {
-    box-shadow: 0px 0px 30px -10px #0652dd;
-  }
-
-  .plan-style-3.green-shadow {
-    box-shadow: 0px 0px 30px -10px #02d639;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -47,7 +15,7 @@
   }
 
   .plan-style-1 {
-    max-width: 400px;
+    max-width: 500px;
   }
   .plan-style-1 .plan-price .price {
     font-size: 50px;
@@ -57,40 +25,8 @@
     margin: -30px 0 14px 0;
   }
 
-  .plan-style-2 {
-    max-width: 400px;
-  }
-
-  .plan-style-3 {
-    max-width: 400px;
-  }
-
-  .plan-style-4 {
-    max-width: 400px;
-  }
-
-  .plan-style-6 {
-    max-width: 400px;
-  }
-
   .plan-tables-1 > div:nth-last-child(-n + 2) {
     margin: 30px auto auto auto;
-  }
-
-  .plan-tables-2 > div:nth-last-child(-n + 2) {
-    margin: 30px auto auto auto;
-  }
-
-  .plan-tables-4 > div:nth-last-child(-n + 2) {
-    margin: 30px auto auto auto;
-  }
-
-  .plan-tables-3 > div:nth-last-child(-n + 2) {
-    margin: 48px auto auto auto;
-  }
-
-  .plan-tables-5 > div:nth-last-child(-n + 2) {
-    margin: 30px 0 0 0;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -100,27 +36,4 @@
   .plan-style-1 .plan-price .price {
     font-size: 48px;
   }
-
-  .plan-style-2 {
-    max-width: 350px;
-  }
-
-  .plan-style-3 {
-    max-width: 350px;
-  }
-
-  .plan-style-4 {
-    max-width: 350px;
-  }
-
-  .plan-tables-5 > div:nth-last-child(-n + 3) {
-    margin: 30px 0 0 0;
-  }
-
-  .plan-style-5 {
-    max-width: 350px;
-    margin: auto !important;
-  }
 }
-
-/*# sourceMappingURL=pricing-tables-responsive.css.map */
