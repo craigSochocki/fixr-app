@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles/pricingplan.css" />
+    <link rel="stylesheet" type="text/css" href="styles/pricingplan2.css" />
+    <link rel="stylesheet" type="text/css" href="styles/switch.css" />
+    <link rel="stylesheet" type="text/css" href="styles/fa.css" />
+  </head>
+  <body>
+    <!-- Start Pricing Table Style 1 -->
+    <section class="pp-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-header text-center">
+              <h2 class="title">Pricing Table</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row plan-tables-1">
+          <!-- Single Plan -->
+          <div class="col-lg-4 col-md-6">
+            <div class="plan-style-1 plan-style-1-bg-blue">
+              <form>
+                <!-- Plan Head -->
+                <div class="plan-header">
+                  <h3 class="plan-title">Basic</h3>
+                  <!-- Plan Price -->
+                  <div class="plan-price">
+                    <p class="price">
+                      <span>$</span
+                      ><span class="big-plan-price" id="basic_price"></span
+                      ><span>/ M</span>
+                    </p>
+                  </div>
+                </div>
+                <!-- Plan List -->
+                <ul class="plan-list">
+                  <li>
+                    <label class="checkbox-lable"
+                      >10gb
+                      <span class="tooltip-info">
+                        <span class="tooltip-hover-text">Storage</span>
+                        <span class="tooltiptext">10gb storage per month</span>
+                      </span>
+                      <span class="one_price">$1</span>
+                      <input
+                        type="checkbox"
+                        class="checkbox_basic_1"
+                        checked="checked"
+                        id="storage_1"
+                        name="checkbox_basic_1"
+                        value="1"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="checkbox-lable"
+                      >20GB Bandwidth
+                      <span class="one_price">$2</span>
+                      <input
+                        type="checkbox"
+                        class="checkbox_basic_1"
+                        checked="checked"
+                        id="bandwidth_1"
+                        name="checkbox_basic_1"
+                        value="2"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="checkbox-lable"
+                      >1 SQL Database
+                      <span class="one_price">$6</span>
+                      <input
+                        type="checkbox"
+                        class="checkbox_basic_1"
+                        checked="checked"
+                        id="database_1"
+                        name="checkbox_basic_1"
+                        value="6"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="checkbox-lable"
+                      >5 Email Account
+                      <span class="one_price">$1</span>
+                      <input
+                        type="checkbox"
+                        class="checkbox_basic_1"
+                        checked="checked"
+                        id="email_1"
+                        name="checkbox_basic_1"
+                        value="1"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="checkbox-lable"
+                      >1 Website
+                      <span class="tooltip-info">
+                        <span class="tooltip-hover-text">Domain</span>
+                        <span class="tooltiptext"
+                          >1 Website Domain Available</span
+                        >
+                      </span>
+                      <span class="one_price">$2</span>
+                      <input
+                        type="checkbox"
+                        class="checkbox_basic_1"
+                        id="domain_1"
+                        name="checkbox_basic_1"
+                        value="2"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="checkbox-lable"
+                      >24/7 Support
+                      <span class="one_price">$1</span>
+                      <input
+                        type="checkbox"
+                        class="checkbox_basic_1"
+                        id="support_1"
+                        name="checkbox_basic_1"
+                        value="1"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                </ul>
+                <!-- Plan Bottom -->
+                <div class="plan-bottom">
+                  <a class="plan-button" href="#" id="basicSignup_1"
+                    >Signup Now</a
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- End Single Plan-->
+          <!-- Single Plan -->
+          <div class="col-lg-4 col-md-6">
+            <div class="plan-style-1 plan-style-1-bg-pink">
+              <!-- Plan Head -->
+              <div class="plan-header">
+                <h3 class="plan-title">Standard</h3>
+                <!-- Plan Price -->
+                <div class="plan-price">
+                  <p class="price">
+                    <span>$</span
+                    ><span class="big-plan-price" id="standard_price"></span
+                    ><span>/ M</span>
+                  </p>
+                </div>
+              </div>
+              <!-- Plan List -->
+              <ul class="plan-list">
+                <li>
+                  <label class="checkbox-lable"
+                    >45GB Storage
+                    <span class="one_price">$2</span>
+                    <input
+                      type="checkbox"
+                      class="checkbox_standerd_1"
+                      checked="checked"
+                      name="checkbox_standerd_1"
+                      value="2"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox-lable"
+                    >40GB Bandwidth
+                    <span class="one_price">$4</span>
+                    <input
+                      type="checkbox"
+                      class="checkbox_standerd_1"
+                      checked="checked"
+                      name="checkbox_standerd_1"
+                      value="4"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox-lable"
+                    >2 SQL Database
+                    <span class="one_price">$11</span>
+                    <input
+                      type="checkbox"
+                      class="checkbox_standerd_1"
+                      checked="checked"
+                      name="checkbox_standerd_1"
+                      value="11"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox-lable"
+                    >10 Email
+                    <span class="tooltip-info">
+                      <span class="tooltip-hover-text">Account</span>
+                      <span class="tooltiptext"
+                        >10 Email Account Available</span
+                      >
+                    </span>
+                    <span class="one_price">$2</span>
+                    <input
+                      type="checkbox"
+                      class="checkbox_standerd_1"
+                      checked="checked"
+                      name="checkbox_standerd_1"
+                      value="2"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox-lable"
+                    >2 Website Domain
+                    <span class="one_price">$4</span>
+                    <input
+                      type="checkbox"
+                      class="checkbox_standerd_1"
+                      checked="checked"
+                      name="checkbox_standerd_1"
+                      value="4"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox-lable"
+                    >24/7 Support
+                    <span class="one_price">$1</span>
+                    <input
+                      type="checkbox"
+                      class="checkbox_standerd_1"
+                      name="checkbox_standerd_1"
+                      value="1"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                </li>
+              </ul>
+              <!-- Plan Bottom -->
+              <div class="plan-bottom">
+                <a class="plan-button" href="#" id="standardSignup_1"
+                  >Signup Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- End Single Plan-->
+          <!-- Single Plan -->
+          <div class="col-lg-4 col-md-6">
+            <div class="plan-style-1 plan-style-1-bg-purple">
+              <!-- Plan Head -->
+              <div class="plan-header">
+                <h3 class="plan-title">Premium</h3>
+                <!-- Plan Price -->
+                <div class="plan-price">
+                  <p class="price">
+                    <span>$</span
+                    ><span class="big-plan-price" id="premium_price"></span
+                    ><span>/ M</span>
+                  </p>
+                </div>
+              </div>
+              <!-- Plan List -->
+              <ul class="plan-list">
+                <li>
+                  <label class="checkbox-lable"
+                    >100GB Storage
+                    <span class="one_price">$3</span>
+                    <input
+                      type="checkbox"
+                      class="checkbox_premium_1"
+                      checked="checked"
+                      name="checkbox_premium_1"
+                      value="3"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox-lable"
+                    >60GB
+                    <span class="tooltip-info">
+                      <span class="tooltip-hover-text">Bandwidth</span>
+                      <span class="tooltiptext">60gb Bandwidth per month</span>
+                    </span>
+                    <span class="one_price">$6</span>
+                    <input
+                      type="checkbox"
+                      class="checkbox_premium_1"
+                      checked="checked"
+                      name="checkbox_premium_1"
+                      value="6"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox-lable"
+                    >3 SQL Database
+                    <span class="one_price">$16</span>
+                    <input
+                      type="checkbox"
+                      class="checkbox_premium_1"
+                      checked="checked"
+                      name="checkbox_premium_1"
+                      value="16"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox-lable"
+                    >15 Email Account
+                    <span class="one_price">$3</span>
+                    <input
+                      type="checkbox"
+                      class="checkbox_premium_1"
+                      checked="checked"
+                      name="checkbox_premium_1"
+                      value="3"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox-lable"
+                    >3 Website Domain
+                    <span class="one_price">$5</span>
+                    <input
+                      type="checkbox"
+                      class="checkbox_premium_1"
+                      checked="checked"
+                      name="checkbox_premium_1"
+                      value="5"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox-lable"
+                    >24/7 Support
+                    <span class="one_price">$1</span>
+                    <input
+                      type="checkbox"
+                      class="checkbox_premium_1"
+                      checked="checked"
+                      name="checkbox_premium_1"
+                      value="1"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                </li>
+              </ul>
+              <!-- Plan Bottom -->
+              <div class="plan-bottom">
+                <a class="plan-button" href="#" id="premiumSignup_1"
+                  >Signup Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- End Single Plan-->
+        </div>
+      </div>
+    </section>
+    <!-- End Pricing Table Style 1 -->
+
+    <script src="scripts/pricingTable.js"></script>
+  </body>
+</html>
