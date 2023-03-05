@@ -1,36 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <!-- for mobile use-->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>fixr - chatbot</title>
 
-    <!-- Main css  -->
-    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+<head>
+  <meta charset="utf-8" />
+  <!-- for mobile use-->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>fixr - chatbot</title>
 
-    <!--Jquery file for navbar-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  </head>
-  <body>
-    <div id="nav-placeholder"></div>
-    <div id="card-placeholder"></div>
+  <!-- Main css  -->
+  <link rel="stylesheet" type="text/css" href="styles/main.css" />
 
-    <!--Main js file-->
-    <script src="scripts/main.js"></script>
+  <!--Jquery file for navbar-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
 
-    <!--jQuery for card-->
-    <script>
-      $.get("components/pricingTable.html", function (data) {
-        $("#card-placeholder").replaceWith(data);
-      });
-    </script>
+<body>
+  <header>
+    <nav>
+      <!-- navbar  -->
+    </nav>
+  </header>
+  <main>
+    <div id="pricing-table"></div>
+  </main>
 
-    <!--JQuery for Navbar-->
-    <script>
-      $.get("components/navbar.html", function (data) {
-        $("#nav-placeholder").replaceWith(data);
-      });
-    </script>
-  </body>
+
+  <!--Main js file-->
+  <script src="scripts/main.js"></script>
+
+  <script>
+    //  inject pricing table
+    $.get("components/pricingTable.html", function (table) {
+      $("#pricing-table").replaceWith(table);
+    });
+
+    // inject navbar
+    $.get("components/navbar.html", function (navbar) {
+      $("nav").replaceWith(navbar);
+    });
+  </script>
+</body>
+
 </html>

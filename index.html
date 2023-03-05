@@ -1,87 +1,83 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
 
-    <!-- For mobile devices-->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <meta charset="utf-8" />
 
-    <!--main CSS-->
-    <link rel="stylesheet" href="styles/main.css" />
+  <!-- For mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!--Title-->
-    <title>fixr - home</title>
-    <!-- Font Awesome Icons -->
-    <script
-      src="https://kit.fontawesome.com/78e40d3227.js"
-      crossorigin="anonymous"
-    ></script>
+  <!--main CSS-->
+  <link rel="stylesheet" href="styles/main.css" />
 
-    <!--Jquery for navigation-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <div id="nav-placeholder"></div>
+  <!--Title-->
+  <title>fixr - home</title>
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/78e40d3227.js" crossorigin="anonymous"></script>
 
-    <main>
-      <!-- Main Content section -->
-      <section>
-        <button onclick="startChat()">get a fixr</button>
-        <h1>connect. chat. resolve.</h1>
+  <!--Jquery for navigation-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav></nav>
+
+  <main>
+    <!-- Main Content section -->
+    <section>
+      <button onclick="startChat()">get a fixr</button>
+      <h1>connect. chat. resolve.</h1>
+      <p>
+        Get instant help with home building and DIY tasks from fixr's
+        AI-powered chatbot.
+      </p>
+      <div class="testimonial">
+        <h2>what our customers are saying</h2>
         <p>
-          Get instant help with home building and DIY tasks from fixr's
-          AI-powered chatbot.
+          "I used Fixr to help me fix a leaky faucet in my bathroom, and the
+          AI chatbot was able to guide me through the process step by step. I
+          couldn't have done it without Fixr!"
         </p>
-        <div class="testimonial">
-          <h2>what our customers are saying</h2>
-          <p>
-            "I used Fixr to help me fix a leaky faucet in my bathroom, and the
-            AI chatbot was able to guide me through the process step by step. I
-            couldn't have done it without Fixr!"
-          </p>
-        </div>
-        <div class="testimonial">
-          <h3>more testimonials</h3>
-          <p>
-            "I was skeptical at first, but Fixr's chatbot really helped me with
-            a tricky wiring problem in my kitchen. I'm a DIY beginner, but Fixr
-            made me feel like a pro!"
-          </p>
-        </div>
-        <h2>featured services</h2>
-        <ul>
-          <li>carpentry</li>
-          <li>flooring</li>
-          <li>electrical</li>
-          <li>plumbing</li>
-          <li>lawncare</li>
-          <li>and more!</li>
-        </ul>
-      </section>
-    </main>
+      </div>
+      <div class="testimonial">
+        <h3>more testimonials</h3>
+        <p>
+          "I was skeptical at first, but Fixr's chatbot really helped me with
+          a tricky wiring problem in my kitchen. I'm a DIY beginner, but Fixr
+          made me feel like a pro!"
+        </p>
+      </div>
+      <h2>featured services</h2>
+      <ul>
+        <li>carpentry</li>
+        <li>flooring</li>
+        <li>electrical</li>
+        <li>plumbing</li>
+        <li>lawncare</li>
+        <li>and more!</li>
+      </ul>
+    </section>
+  </main>
 
-    <footer>
-      <!-- Footer section -->
-      <p>&copy; fixr solutions, inc. 2023</p>
-      <section class="socials">
-        <i id="fb-icon" class="fab fa-facebook"></i>
-        <i id="ig-icon" class="fab fa-instagram"></i>
-        <i id="yt-icon" class="fab fa-youtube"></i>
-      </section>
-    </footer>
+  <footer>
+    <!-- Footer section -->
+  </footer>
 
-    <!-- Jquery for navbar-->
-    <script>
-      $.get("components/navbar.html", function (data) {
-        $("#nav-placeholder").replaceWith(data);
-      });
-    </script>
+  <!-- Jquery for navbar-->
+  <script>
+    $.get("components/navbar.html", function (navbar) {
+      $("nav").replaceWith(navbar);
+    });
 
-    <script>
-      function startChat() {
-        window.open("chatbot.html", "_blank");
-      }
-    </script>
-  </body>
+    $.get("components/footer.html", function (footer) {
+      $("footer").replaceWith(footer);
+    });
+
+    function startChat() {
+      window.open("chatbot.html", "_self");
+    };
+  </script>
+</body>
+
 </html>

@@ -1,63 +1,68 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <!-- for mobile use-->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>fixr - chatbot</title>
 
-    <!-- Main css  -->
-    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+<head>
+  <meta charset="utf-8" />
+  <!-- for mobile use-->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>fixr - chatbot</title>
 
-    <!--Jquery file for navbar-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  </head>
-  <body>
-    <div id="nav-placeholder"></div>
+  <!-- Main css  -->
+  <link rel="stylesheet" type="text/css" href="styles/main.css" />
 
+  <!--Jquery file for navbar-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <!-- navbar -->
+    </nav>
+  </header>
+
+  <main>
     <h1>Register</h1>
 
     <form>
       <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
-        <input
-          type="email"
-          class="form-control"
-          id="exampleInputEmail1"
-          aria-describedby="emailHelp"
-          placeholder="Enter email"
-        />
-        <small id="emailHelp" class="form-text text-muted"
-          ><i>We'll never share your email with anyone else.</i></small
-        >
-        <spacer type="horizontal" width="100" height="100"><pre></pre></em></spacer>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          placeholder="Enter email" />
+        <small id="emailHelp" class="form-text text-muted"><i>We'll never share your email with anyone else.</i></small>
+        <spacer type="horizontal" width="100" height="100">
+          <pre></pre></em>
+        </spacer>
       </div>
       <div class="form-group">
         <label for="exampleInputPassword1">Password</label>
-        <input
-          type="password"
-          class="form-control"
-          id="exampleInputPassword1"
-          placeholder="Password"
-        />
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
       </div>
-      <spacer type="horizontal" width="100" height="100"><pre></pre></em></spacer>
+      <spacer type="horizontal" width="100" height="100">
+        <pre></pre></em>
+      </spacer>
       <div class="form-check">
         <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-        <label class="form-check-label" for="exampleCheck1"
-          ><p>I've read the terms and conditions</p></label
-        >
+        <label class="form-check-label" for="exampleCheck1">
+          <p>I've read the terms and conditions</p>
+        </label>
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
-    <!--Main js file-->
-    <script src="scripts/register.js"></script>
+  </main>
 
-    <!--JQuery for Navbar-->
-    <script>
-      $.get("components/navbar.html", function (data) {
-        $("#nav-placeholder").replaceWith(data);
-      });
-    </script>
-  </body>
+  <footer>
+    <!-- footer -->
+  </footer>
+  <!--Main js file-->
+  <script src="scripts/register.js"></script>
+
+  <!--JQuery for Navbar-->
+  <script>
+    $.get("components/navbar.html", function (navbar) {
+      $("nav").replaceWith(navbar);
+    });
+  </script>
+</body>
+
 </html>

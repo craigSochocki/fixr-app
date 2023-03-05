@@ -8,5 +8,8 @@
     "**/.DS_Store": true,
     "**/*.js.map": true,
     "**/*.js.map.js": true
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
   }
 }

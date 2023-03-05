@@ -13,7 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
-    <div id="nav-placeholder"></div>
+    <nav></nav>
 
     <div id="conversation">
       <div class="fixr-response">Hi, I'm fixr. How can I help you?</div>
@@ -33,8 +33,8 @@
 
     <!--JQuery for Navbar-->
     <script>
-      $.get("components/navbar.html", function (data) {
-        $("#nav-placeholder").replaceWith(data);
+      $.get("components/navbar.html", function (navbar) {
+        $("nav").replaceWith(navbar);
       });
     </script>
   </body>
