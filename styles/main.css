@@ -263,18 +263,6 @@ footer p {
   color: #ff0000;
 }
 
-/* footer {
-  background-color: #4f4f4f;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  margin-top: 50px;
-} */
-
-/* footer p {
-  margin: 10px 0;
-} */
 
 #input-container {
   position: fixed;
@@ -309,4 +297,13 @@ footer p {
 .form-check-label {
   display: flex;
   align-items: center;
+}
+
+.register-form {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.register-form1 {
+  margin-top: 0px;
 }
