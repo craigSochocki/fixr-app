@@ -298,3 +298,15 @@ footer p {
   font-size: 24px;
   color: #4f4f4f;
 }
+
+/*change font size for checkbox text on register page*/
+.p_register {
+  font-size: 14px;
+
+}
+
+/* Align text with checkbox on register page*/
+.form-check-label {
+  display: flex;
+  align-items: center;
+}
