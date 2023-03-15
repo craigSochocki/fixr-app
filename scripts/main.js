@@ -45,6 +45,10 @@ form.addEventListener("keypress", (e) => {
   if (e.key === "Enter") {
     e.preventDefault();
 
+    //generate random number for fixr response
+    randomNum = Math.floor(Math.random() * fixrMessages.length - 1);
+    console.log(randomNum);
+
     // users message = input.value
     const message = input.value;
 
@@ -55,7 +59,7 @@ form.addEventListener("keypress", (e) => {
     appendMessage("user", message);
 
     setTimeout(() => {
-      appendMessage("fixr", fixrMessages[counter]);
+      appendMessage("fixr", fixrMessages[randomNum]);
     }, 1000);
     counter++;
     if (counter > fixrMessages.length - 1) {
