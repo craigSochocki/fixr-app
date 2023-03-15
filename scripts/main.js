@@ -1,3 +1,18 @@
+let fixrMessages = [
+  "I'm sorry, I don't understand the question. Can you please rephrase it?",
+  "Based on the data available, it seems likely that...",
+  "I can't make decisions, but I can provide you with information that may help you make a decision.",
+  "Here are some resources that might be helpful to you: [list of resources]",
+  "I'm not sure. Would you like me to look it up for you?",
+  "That's a great question! Let me see if I can find an answer for you.",
+  "I think the best course of action would be...",
+  "According to my analysis, the most likely outcome is...",
+  "I'm sorry, I'm having trouble processing your request. Please try again later.",
+  "I'm always learning, so please let me know if there's anything I can improve on.",
+];
+
+let counter = 0;
+
 // store elements in variables
 const conversation = document.getElementById("conversation");
 const form = document.getElementById("chat-form");
@@ -40,7 +55,11 @@ form.addEventListener("keypress", (e) => {
     appendMessage("user", message);
 
     setTimeout(() => {
-      appendMessage("fixr", "I see.  Tell me more.");
+      appendMessage("fixr", fixrMessages[counter]);
     }, 1000);
+    counter++;
+    if (counter > fixrMessages.length - 1) {
+      counter = 0;
+    }
   }
 });
