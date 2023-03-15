@@ -86,7 +86,7 @@ img {
 }
 
 button {
-  background-color: #0070c0;
+  background-color: #2d6b75;
   color: #fff;
   border: none;
   padding: 16px 32px;
@@ -100,7 +100,7 @@ button {
 }
 
 button:hover {
-  background-color: #005aa6;
+  background-color: #92c3be;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -140,13 +140,18 @@ input[type="text"] {
 }
 
 button[type="submit"] {
-  background-color: #0070c0;
+  background-color: #2d6b75;
   color: #fff;
   border: none;
   padding: 10px 20px;
   font-size: 18px;
   border-radius: 20px;
   cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #92c3be;
+
 }
 
 /* Conversation styles */
@@ -181,8 +186,8 @@ button[type="submit"] {
 }
 
 .fixr-response {
-  background-color: #e1ffc7;
-  color: #4f4f4f;
+  background-color: #d8977d;
+  color: white;
   border-radius: 15px;
   padding: 10px 15px;
   margin: 10px 0;
@@ -208,7 +213,7 @@ button[type="submit"] {
 }
 
 .user-response {
-  background-color: #0070c0;
+  background-color: #2d6b75;
   color: #fff;
   border-radius: 15px;
   padding: 10px 15px;
@@ -299,11 +304,13 @@ footer p {
   align-items: center;
 }
 
+/* css for registerForm*/
 .register-form {
   margin-top: 0px;
   padding-top: 0px;
 }
 
+/* css for registerForm*/
 .register-form1 {
   margin-top: 0px;
 }
