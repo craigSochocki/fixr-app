@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!-- for mobile use-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>fixr - chatbot</title>
+
+    <!-- Main css  -->
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+
+    <!--Jquery file for navbar-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body class="fixr-img">
+    <header>
+        <nav>
+            <!-- navbar -->
+        </nav>
+    </header>
+
+
+
+    <div class="fixr-text">
+        <div class="jumbotron jumbotron-fluid ">
+            <div class="container">
+                <h1 class="display-4 fixr-text"><img class="round-img" src="images/fixr-worker.jpg"> What is a Fixr?
+                </h1>
+                <p class="lead fixr-text">A fixr is a highly skilled professional who specializes in fixing problems
+                    related
+                    to
+                    homes,
+                    cars, boats, and other
+                    areas of expertise. They possess a deep understanding of their respective fields and have the
+                    knowledge
+                    and expertise to
+                    identify and explain solutions to complex problems. Fixrs are also highly trained in
+                    communication
+                    and
+                    are able to
+                    convey their solutions in a clear and concise manner, whether through chat, video, or other
+                    means.
+                </p>
+                <p class="lead fixr-text"> One of the key attributes of a fixr is their ability to adapt to different
+                    situations
+                    and
+                    provide solutions that are
+                    tailored to the unique needs of their clients. They are able to quickly assess a problem and
+                    come up
+                    with a plan of
+                    action that addresses the root cause of the issue, rather than just treating the symptoms.
+                    Additionally,
+                    fixrs are
+                    committed to ongoing learning and professional development in their field to ensure that they
+                    stay
+                    up to
+                    date with the
+                    latest trends and advancements.
+                </p>
+                <p class="lead fixr-text">In today's fast-paced world, where time is often of the essence, fixrs are a
+                    valuable
+                    resource for anyone in need of
+                    quick and efficient solutions to their problems. Whether you need help fixing a leaky faucet,
+                    repairing
+                    a car engine, or
+                    troubleshooting a problem with your boat, a fixr can help you get back on track and restore your
+                    peace
+                    of mind. With
+                    their expertise, professionalism, and dedication to customer satisfaction, fixrs are an
+                    essential
+                    part
+                    of modern life.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <!-- footer -->
+    </footer>
+    <!--Main js file-->
+    <script src=" scripts/register.js"></script>
+
+    <!--JQuery for Navbar-->
+    <script>
+        $.get("components/navbar.html", function (navbar) {
+            $("nav").replaceWith(navbar);
+        });
+
+
+    </script>
+</body>
+
+</html>
