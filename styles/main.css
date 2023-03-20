@@ -142,7 +142,9 @@ label {
   color: #4f4f4f;
 }
 
-input[type="text"] {
+
+
+#chat-input {
   padding: 10px;
   font-size: 20px;
   border: 2px solid #0070c0;
