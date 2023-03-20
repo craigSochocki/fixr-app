@@ -1,9 +1,19 @@
+/*Fixr Colors*/
+/*
+#2d6b75 - darker blue
+#92c3be - lighter blue
+#eff6f9 - whiteish blue
+#f9ded4 - light orange
+#d8977d - darker orange
+
+*/
+
 /* Base styles */
 body {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
-  background-color: #f5f5f5;
+  background-color: eff6f9;
 
 }
 
@@ -132,7 +142,9 @@ label {
   color: #4f4f4f;
 }
 
-input[type="text"] {
+
+
+#chat-input {
   padding: 10px;
   font-size: 20px;
   border: 2px solid #0070c0;
@@ -338,4 +350,24 @@ footer p {
 
 .fixr-text {
   color: white;
+}
+
+.register-box {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-bottom: 15px;
+  border-radius: 5px;
+  border: 2px solid gray;
+
+  width: auto;
+  height: auto;
+  background-color: #92c3be;
+}
+
+.resize-image {
+  height: 80px;
+  width: auto;
+
 }
