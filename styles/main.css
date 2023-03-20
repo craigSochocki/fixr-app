@@ -1,9 +1,19 @@
+/*Fixr Colors*/
+/*
+#2d6b75 - darker blue
+#92c3be - lighter blue
+#eff6f9 - whiteish blue
+#f9ded4 - light orange
+#d8977d - darker orange
+
+*/
+
 /* Base styles */
 body {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
-  background-color: #f5f5f5;
+  background-color: eff6f9;
 
 }
 
@@ -351,5 +361,11 @@ footer p {
 
   width: auto;
   height: auto;
-  background-color: lightgray;
+  background-color: #92c3be;
+}
+
+.resize-image {
+  height: 80px;
+  width: auto;
+
 }
